@@ -29,14 +29,16 @@ end
 
 return packer.startup(function(use)
   use 'wbthomason/packer.nvim'
+  use 'nvim-lua/plenary.nvim'
   use 'bluz71/vim-nightfly-colors' -- color scheme
   use 'christoomey/vim-tmux-navigator' -- tmux and vim window navigation
   use 'szw/vim-maximizer' -- maximizes and restores current window
   use 'numToStr/Comment.nvim' -- commenting with gc
   use { 'nvim-lualine/lualine.nvim', requires = { 'nvim-tree/nvim-web-devicons' } } -- status line
   use { 'nvim-tree/nvim-tree.lua', requires = { 'nvim-tree/nvim-web-devicons' } } -- file tree explorer
-  use({ "nvim-telescope/telescope-fzf-native.nvim", run = "make" }) -- file searcher native sorter
-  use({ "nvim-telescope/telescope.nvim", tag = "0.1.x", requires = { 'nvim-lua/plenary.nvim' }}) -- file searching
+  use ({ "nvim-telescope/telescope-fzf-native.nvim", run = "make" }) -- file searcher native sorter
+  use ({ "nvim-telescope/telescope.nvim", tag = "0.1.x" }) -- file searching
+  use {'neoclide/coc.nvim', branch = 'release'} -- Auto completion and LSP
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
