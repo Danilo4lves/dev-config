@@ -3,6 +3,7 @@ require("alves.plugins.comment")
 require("alves.plugins.nvim-tree")
 require("alves.plugins.lualine")
 require("alves.plugins.telescope")
+require("alves.plugins.vim-tmux-navigator")
 
 require("alves.core.options")
 require("alves.core.keymaps")

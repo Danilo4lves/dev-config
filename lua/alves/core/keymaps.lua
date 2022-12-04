@@ -4,12 +4,12 @@ local keymap = vim.keymap
 
 -- Windows
 keymap.set("n", "<leader>wv", "<C-w>v") -- split window vertically
-keymap.set("n", "<leader>wh", "<C-w>s") -- split window horizontally
+keymap.set("n", "<leader>ws", "<C-w>s") -- split window horizontally
 keymap.set("n", "<leader>we", "<C-w>=") -- make split windows equal width
-keymap.set("n", "<leader>wk", "<C-k>") -- move to upper window
-keymap.set("n", "<leader>wl", "<C-l>") -- move to right window
-keymap.set("n", "<leader>wh", "<C-h>") -- move to left window
-keymap.set("n", "<leader>wj", "<C-j>") -- move to bottom window
+keymap.set("n", "<leader>wk", ":TmuxNavigateUp<CR>") -- move to upper window
+keymap.set("n", "<leader>wl", ":TmuxNavigateRight<CR>") -- move to right window
+keymap.set("n", "<leader>wh", ":TmuxNavigateLeft<CR>") -- move to left window
+keymap.set("n", "<leader>wj", ":TmuxNavigateDown<CR>") -- move to bottom window
 keymap.set("n", "<leader>wd", ":close<CR>") -- close current split window
 keymap.set("n", "<leader>wm", ":MaximizerToggle<CR>") -- maximizes or restore current window
 
