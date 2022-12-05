@@ -5,6 +5,7 @@ require("alves.plugins.lualine")
 require("alves.plugins.telescope")
 require("alves.plugins.coc")
 require("alves.plugins.vim-tmux-navigator")
+require("alves.plugins.dashboard")
 
 require("alves.core.options")
 require("alves.core.keymaps")

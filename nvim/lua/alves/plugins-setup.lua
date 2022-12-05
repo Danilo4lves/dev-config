@@ -39,6 +39,7 @@ return packer.startup(function(use)
   use ({ "nvim-telescope/telescope-fzf-native.nvim", run = "make" }) -- file searcher native sorter
   use ({ "nvim-telescope/telescope.nvim", tag = "0.1.x" }) -- file searching
   use {'neoclide/coc.nvim', branch = 'release'} -- Auto completion and LSP
+  use 'glepnir/dashboard-nvim'
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
