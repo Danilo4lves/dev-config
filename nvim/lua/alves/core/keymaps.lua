@@ -26,7 +26,7 @@ keymap.set("n", "<leader>tn", ":tabn<CR>") --  go to next tab
 keymap.set("n", "<leader>tp", ":tabp<CR>") --  go to previous tab
 
 -- File explorer
-keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>") -- maximizes or restore current window
+keymap.set("n", "<leader>oe", ":NvimTreeToggle<CR>") -- maximizes or restore current window
 
 -- File finding
 keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<cr>") -- find files within current working directory, respects .gitignore
@@ -36,7 +36,7 @@ keymap.set("n", "<leader>fc", "<cmd>Telescope grep_string<cr>") -- find string u
 keymap.set("n", "<leader>fh", "<cmd>Telescope help_tags<cr>") -- list available help tags
 
 -- Searching
-keymap.set("n", "<leader>st", ":%s/") -- search within tab
+keymap.set("n", "<leader>sb", ":%s/") -- search within current buffer
 
 -- Git
 keymap.set("n", "<leader>gg", ":Neogit<CR>") -- open git view
