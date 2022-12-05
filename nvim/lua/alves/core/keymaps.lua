@@ -13,6 +13,12 @@ keymap.set("n", "<leader>wj", ":TmuxNavigateDown<CR>") -- move to bottom window
 keymap.set("n", "<leader>wd", ":close<CR>") -- close current split window
 keymap.set("n", "<leader>wm", ":MaximizerToggle<CR>") -- maximizes or restore current window
 
+-- Buffer management
+keymap.set("n", "<leader>bb", "<cmd>Telescope buffers<cr>") -- list open buffers in current neovim instance
+keymap.set("n", "<leader>bn", ":bn<cr>") -- go to next buffer
+keymap.set("n", "<leader>bp", ":bp<cr>") -- go to previous buffer
+keymap.set("n", "<leader>bd", ":bd<cr>") -- delete current buffer
+
 -- Tabs management
 keymap.set("n", "<leader>to", ":tabnew<CR>") -- open new tab
 keymap.set("n", "<leader>td", ":tabclose<CR>") -- close current tab
@@ -27,7 +33,6 @@ keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<cr>") -- find files wit
 keymap.set("n", "<leader>fr", "<cmd>Telescope oldfiles<cr>") -- find recent files
 keymap.set("n", "<leader>fs", "<cmd>Telescope live_grep<cr>") -- find string in current working directory as you type
 keymap.set("n", "<leader>fc", "<cmd>Telescope grep_string<cr>") -- find string under cursor in current working directory
-keymap.set("n", "<leader>fb", "<cmd>Telescope buffers<cr>") -- list open buffers in current neovim instance
 keymap.set("n", "<leader>fh", "<cmd>Telescope help_tags<cr>") -- list available help tags
 
 -- Searching
