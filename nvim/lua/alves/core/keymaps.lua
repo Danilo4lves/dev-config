@@ -24,6 +24,7 @@ keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>") -- maximizes or restore curr
 
 -- File finding
 keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<cr>") -- find files within current working directory, respects .gitignore
+keymap.set("n", "<leader>fr", "<cmd>Telescope oldfiles<cr>") -- find recent files
 keymap.set("n", "<leader>fs", "<cmd>Telescope live_grep<cr>") -- find string in current working directory as you type
 keymap.set("n", "<leader>fc", "<cmd>Telescope grep_string<cr>") -- find string under cursor in current working directory
 keymap.set("n", "<leader>fb", "<cmd>Telescope buffers<cr>") -- list open buffers in current neovim instance
@@ -39,10 +40,10 @@ keymap.set("n", "<leader>gb", "<cmd>Telescope git_branches<cr>") -- list git bra
 keymap.set("n", "<leader>gs", "<cmd>Telescope git_status<cr>") -- list current changes per file with diff preview ["gs" for git status]
 
 -- Code navigation
-keymap.set("n", "gd", "<Plug>(coc-definition)", { silent = true })
-keymap.set("n", "gy", "<Plug>(coc-type-definition)", { silent = true })
-keymap.set("n", "gi", "<Plug>(coc-implementation)", { silent = true })
-keymap.set("n", "gr", "<Plug>(coc-references)", { silent = true })
+keymap.set("n", "gd", "<Plug>(coc-definition)", { silent = true }) -- go to definition
+keymap.set("n", "gy", "<Plug>(coc-type-definition)", { silent = true }) -- go to type definition
+keymap.set("n", "gi", "<Plug>(coc-implementation)", { silent = true }) -- go to implementation
+keymap.set("n", "gr", "<Plug>(coc-references)", { silent = true }) -- look for references
 
 -- Code diagnostic
 keymap.set("n", "[g", "<Plug>(coc-diagnostic-prev)", { silent = true })
